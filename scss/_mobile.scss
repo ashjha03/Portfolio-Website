@@ -36,20 +36,14 @@
   }
 
   .menu-nav {
-    height: 75vh;
+    height: 60vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
 
   .menu-branding {
-    height: 25vh;
+    height: 40vh;
     transform: translate3d(100%, 0, 0);
-
-    .portrait {
-      background: url(../img/portrait.png);
-      width: 150px;
-      height: 150px;
-    }
   }
 
   .about-info {

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text.css" href="style.css" />
+
+    <title>Gauri Shankar Rishte Naate Kendra | Home</title>
+    <style>
+      #formdiv::before {
+        content: "";
+        background-image: linear-gradient(rgb(255, 255, 255), #dc3545);
+        position: fixed;
+        height: 100vh;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;
+      }
+      #formdiv {
+        margin-top: 2vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">GSRNK</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Submit BioData</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <form
+      method="POST"
+      class="col-md-6 container"
+      action="/contact"
+      id="formdiv"
+    >
+      <div class="form-group">
+        <label for="exampleInputEmail1">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="fname"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" style="float: left; width: 100%"
+          >Last Name</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="lname"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Manglik Status</label>
+        <select name="manglik" class="form-control">
+          <option value="">Select Status</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+          <option value="Anshik">Anshik</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" style="float: left; width: 100%"
+          >Gotra</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="gotra"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email ID</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="emailID"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="password"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Gender</label>
+        <select class="form-control" name="gender">
+          <option selected="" value="">Select Your Gender...</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Cast</label>
+        <select class="form-control" name="cast">
+          <option selected="" value="">Select Your Cast...</option>
+          <option value="jain">Jain</option>
+          <option value="aggarwal">Aggarwal</option>
+          <option value="brahmin">Brahmin</option>
+          <option value="punjabi">Punjabi</option>
+          <option value="muslim">Muslim</option>
+          <option value="sindhi">Sindhi</option>
+          <option value="singh">Singh</option>
+          <option value="rajpoot">Rajpoot</option>
+          <option value="yadav">Yadav</option>
+          <option value="kori">Kori</option>
+          <option value="dhobi">Dhobi</option>
+          <option value="nai">Nai</option>
+          <option value="pasi">Pasi</option>
+          <option value="gadhwali">Gadhwali</option>
+          <option value="jaat">Jaat</option>
+          <option value="chaudry">Choudhary</option>
+          <option value="chaudry">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Divorcee</label>
+        <select class="form-control" name="divorce">
+          <option selected="">Select Your status...</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Contact Number</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="mobile"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Date of Birth</label><br />
+        <select
+          class="form-control"
+          name="dob_m"
+          id="dob_m"
+          title="your month of birth..."
+          style="width: 33%; float: left"
+        >
+          <option selected="selected" value="0" style="color: #888">
+            Month
+          </option>
+          <option value="January">Jan</option>
+          <option value="February">Feb</option>
+          <option value="March">Mar</option>
+          <option value="April">Apr</option>
+          <option value="May">May</option>
+          <option value="June">Jun</option>
+          <option value="July">Jul</option>
+          <option value="August">Aug</option>
+          <option value="September">Sep</option>
+          <option value="October">Oct</option>
+          <option value="November">Nov</option>
+          <option value="December">Dec</option>
+        </select>
+        <select
+          class="form-control"
+          name="dob_d"
+          id="dob_d"
+          title="your day of birth..."
+          style="width: 32%; float: left"
+        >
+          <option selected="selected" value="DD" style="color: #888">
+            Day
+          </option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        <select
+          class="form-control"
+          name="dob_y"
+          id="dob_y"
+          title="your year of birth..."
+          style="width: 33%; float: left"
+        >
+          <option selected="selected" value="YYYY" style="color: #888">
+            Year
+          </option>
+          <option value="1997">1997</option>
+          <option value="1996">1996</option>
+          <option value="1995">1995</option>
+          <option value="1994">1994</option>
+          <option value="1993">1993</option>
+          <option value="1992">1992</option>
+          <option value="1991">1991</option>
+          <option value="1990">1990</option>
+          <option value="1989">1989</option>
+          <option value="1988">1988</option>
+          <option value="1987">1987</option>
+          <option value="1986">1986</option>
+          <option value="1985">1985</option>
+          <option value="1984">1984</option>
+          <option value="1983">1983</option>
+          <option value="1982">1982</option>
+          <option value="1981">1981</option>
+          <option value="1980">1980</option>
+          <option value="1979">1979</option>
+          <option value="1978">1978</option>
+          <option value="1977">1977</option>
+          <option value="1976">1976</option>
+          <option value="1975">1975</option>
+          <option value="1974">1974</option>
+          <option value="1973">1973</option>
+          <option value="1972">1972</option>
+          <option value="1971">1971</option>
+          <option value="1970">1970</option>
+          <option value="1969">1969</option>
+          <option value="1968">1968</option>
+          <option value="1967">1967</option>
+          <option value="1966">1966</option>
+          <option value="1965">1965</option>
+          <option value="1964">1964</option>
+          <option value="1963">1963</option>
+          <option value="1962">1962</option>
+          <option value="1961">1961</option>
+          <option value="1960">1960</option>
+          <option value="1959">1959</option>
+          <option value="1958">1958</option>
+          <option value="1957">1957</option>
+          <option value="1956">1956</option>
+          <option value="1955">1955</option>
+          <option value="1954">1954</option>
+          <option value="1953">1953</option>
+          <option value="1952">1952</option>
+          <option value="1951">1951</option>
+          <option value="1950">1950</option>
+          <option value="1949">1949</option>
+          <option value="1948">1948</option>
+          <option value="1947">1947</option>
+          <option value="1946">1946</option>
+          <option value="1945">1945</option>
+          <option value="1944">1944</option>
+          <option value="1943">1943</option>
+          <option value="1942">1942</option>
+          <option value="1941">1941</option>
+          <option value="1940">1940</option>
+          <option value="1939">1939</option>
+          <option value="1938">1938</option>
+          <option value="1937">1937</option>
+          <option value="1936">1936</option>
+          <option value="1935">1935</option>
+          <option value="1934">1934</option>
+          <option value="1933">1933</option>
+          <option value="1932">1932</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Time of Birth</label>
+        <input
+          type="time"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="tob"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Place of Birth</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="pob"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Annual Salary Package</label>
+
+        <select name="salary" id="" class="form-control">
+          <option value="" selected="">select salary</option>
+          <option value="1 lac">1 lac</option>
+          <option value="2 lakh">2 lakh</option>
+          <option value="3 lakh">3 lakh</option>
+          <option value="4 lakh">4 lakh</option>
+          <option value="5 lakh">5 lakh</option>
+          <option value="6 lakh">6 lakh</option>
+          <option value="7 lakh">7 lakh</option>
+          <option value="8 lakh">8 lakh</option>
+          <option value="9 lakh">9 lakh</option>
+          <option value="10 lakh">10 lakh</option>
+          <option value="11 lakh">11 lakh</option>
+          <option value="12 lakh">12 lakh</option>
+          <option value="13 lakh">13 lakh</option>
+          <option value="14 lakh">14 lakh</option>
+          <option value="15 lakh">15 lakh</option>
+          <option value="16 lakh">16 lakh</option>
+          <option value="21">17 lakh</option>
+          <option value="17 lakh">18 lakh</option>
+          <option value="19 lakh">19 lakh</option>
+          <option value="20 lakh">20 lakh</option>
+          <option value="21 lakh">21 lakh</option>
+          <option value="22 lakh">22 lakh</option>
+          <option value="24 lakh">24 lakh</option>
+          <option value="25 lakh">25 lakh</option>
+          <option value="26 lakh">26 lakh</option>
+          <option value="27 lakh">27 lakh</option>
+          <option value="28 lakh">28 lakh</option>
+          <option value="29 lakh">29 lakh</option>
+          <option value="29 lakh">29 lakh</option>
+          <option value="31 lakh">31 lakh</option>
+          <option value="32 lakh">32 lakh</option>
+          <option value="33 lakh">33 lakh</option>
+          <option value="34 lakh">34 lakh</option>
+          <option value="35 lakh">35 lakh</option>
+          <option value="36 lakh">36 lakh</option>
+          <option value="37 lakh">37 lakh</option>
+          <option value="38 lakh">38 lakh</option>
+          <option value="39 lakh">39 lakh</option>
+          <option value="40 lakh">40 lakh</option>
+          <option value="41 lakh">41 lakh</option>
+          <option value="42 lakh">42 lakh</option>
+          <option value="43 lakh">43 lakh</option>
+          <option value="44 lakh">44 lakh</option>
+          <option value="45 lakh">45 lakh</option>
+          <option value="46 lakh">46 lakh</option>
+          <option value="47 lakh">47 lakh</option>
+          <option value="47 lakh">48 lakh</option>
+          <option value="49 lakh">49 lakh</option>
+          <option value="50 lakh">50 lakh</option>
+          <option value="Above">Above</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Height</label>
+        <select name="height" id="height" class="form-control">
+          <option value="4ft 5inc - 135cms">4ft 5inc - 135cms</option>
+          <option value="4ft 6inc - 137cms">4ft 6inc - 137cms</option>
+          <option value="4ft  7inc - 140cms">4ft 7inc - 140cms</option>
+          <option value="4ft 8inc -  142cms">4ft 8inc - 142cms</option>
+          <option value="ft 9inc - 145cms">4ft 9inc - 145cms</option>
+          <option value="4ft 10inc - 147cms">4ft 10inc - 147cms</option>
+          <option value="4ft 11inc - 150cms">4ft 11inc - 150cms</option>
+          <option value="5 ft - 152cms">5 ft - 152cms</option>
+          <option value="5ft 1inc - 155cms">5ft 1inc - 155cms</option>
+          <option value="5ft 2inc - 157cms">5ft 2inc - 157cms</option>
+          <option value="5ft 3inc - 160cms">5ft 3inc - 160cms</option>
+          <option value="5ft 4inc - 162cms">5ft 4inc - 162cms</option>
+          <option value="5ft 5inc - 165cms">5ft 5inc - 165cms</option>
+          <option value="5ft 6inc - 167cms">5ft 6inc - 167cms</option>
+          <option value="5ft 7inc - 170cms">5ft 7inc - 170cms</option>
+          <option value="5ft 8inc - 172cms">5ft 8inc - 172cms</option>
+          <option value="5ft 9inc - 175cms">5ft 9inc - 175cms</option>
+          <option value="5ft 10inc - 177cms">5ft 10inc - 177cms</option>
+          <option value="5ft 11inc - 180cms">5ft 11inc - 180cms</option>
+          <option value="6ft - 183cms">6ft - 183cms</option>
+          <option value="6ft 1inc - 186cms">6ft 1inc - 186cms</option>
+          <option value="6ft 2inc - 188cms">6ft 2inc - 188cms</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Colour</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="colour"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Education</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="education"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Occupation</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="occupation"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Eating Habbits: </label>
+        <br />
+        <input type="radio" value="Non Vegetarian" name="habit" /> Non
+        Vegetarian <br />
+        <input type="radio" value="Vegetarian" name="habit" /> Vegetarian <br />
+        <input type="radio" value="Eggetarian" name="habit" /> Eggetarian
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Smoker:</label>
+        <br />
+        <input type="radio" value="Non Smoker" name="habit1" /> Non Smoker
+        <br />
+        <input type="radio" value="Smoker" name="habit1" /> Smoker
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Alcohol:</label>
+        <br />
+        <input type="radio" value="Non Drinker" name="habit2" /> Non Drinker
+        <br />
+        <input type="radio" value="Drinker" name="habit2" /> Drinker
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Residential Address: </label>
+        <textarea class="form-control" rows="4" name="address"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">House Status: </label>
+        <select class="form-control" name="house_status">
+          <option>Select house status</option>
+          <option value="owned">Owned</option>
+          <option value="rented">Rented</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Native Place</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="native_place"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Current City</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="city"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Father's Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="father_name"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Father's Occupation</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="father_occupation"
+        />
+      </div>
+
+      <a href="#" class="btn btn-danger my-3">Submit BioData</a>
+    </form>
+
+    <div class="bg-danger text-secondary px-4 py-3 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-warning">
+          Gauri Shankar Rishte Naate Kendra
+        </h1>
+        <div class="col-lg-6 mx-auto text-light">
+          <p class="fs-5 mb-4">© 2017–2021 Gauri Shankar Rishte Naate Kendra</p>
+          <p class="fs-5 mb-4">All Rights Reserved</p>
+          <h1 class="display-5 fw-bold text-warning">Thanks for Visiting</h1>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
